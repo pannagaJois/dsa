@@ -26,6 +26,5 @@ int main (int argc, char *argv[]) {
   
   vector<int>::iterator it = c.rbegin(); //points to the last element, incrementing it brings it to the 2nd last element
    
-    
   return 0;
 }
