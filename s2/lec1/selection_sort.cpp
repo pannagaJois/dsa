@@ -1,6 +1,6 @@
 #include <iostream>
 
-void sort(int a[], int n) {
+void selection_sort(int a[], int n) {
   for (int i = 0; i < n-1; i++) {
     int min_index = i;
     for(int j = i+1; j < n; j++)
@@ -12,7 +12,7 @@ void sort(int a[], int n) {
 int main (int argc, char *argv[]) {
   int a[] = {5, 3, 6, 2, 1, 4};
 
-  sort(a, 6);
+  selection_sort(a, 6);
 
   for (int i = 0; i < 6; i++)
     std::cout << a[i] << "  ";
