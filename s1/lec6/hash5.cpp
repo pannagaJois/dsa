@@ -18,3 +18,4 @@ int main (int argc, char *argv[]) {
     std::cout << it.first << " : " << it.second << std::endl;
   return 0;
 }
+// use unordered_map most of the time as it is O(1) on most cases
