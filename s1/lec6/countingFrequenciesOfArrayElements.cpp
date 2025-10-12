@@ -1,5 +1,5 @@
 #include<iostream>
-#include<map>
+#include<unordered_map>
 #include<list>
 
 int main (int argc, char *argv[]) {
@@ -12,7 +12,7 @@ int main (int argc, char *argv[]) {
   for (int i = 0; i < n; i++)
     std::cin >> num[i];
 
-  std::map<int, int> m;
+  std::unordered_map<int, int> m;
   for (int i = 0; i < sizeof(num)/sizeof(num[0]); i++)
     m[num[i]]++;
   
