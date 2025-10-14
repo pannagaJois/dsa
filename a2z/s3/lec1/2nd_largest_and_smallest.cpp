@@ -2,14 +2,15 @@
 #include<climits>
 
 int sec_largest(int a[], int n) {
-  int l = a[0];
+  if(n<2) return -1;
+  int l = INT_MIN;
   int sl=INT_MIN;
-  for (int i = 1; i < n; i++) {
+  for (int i = 0; i < n; i++) {
     if(a[i]>l) {
       sl=l;
       l=a[i];
     }
-    else if(a[i] > sl && sl < l)
+    else if(a[i] > sl)
       sl=a[i];
   }
   if(sl == INT_MIN) return -1;
@@ -17,14 +18,14 @@ int sec_largest(int a[], int n) {
 }
 
 int sec_smallest(int a[], int n) {
-  int s = a[0];
+  int s = INT_MAX;
   int ss=INT_MAX;
-  for (int i = 1; i < n; i++) {
+  for (int i = 0; i < n; i++) {
     if(a[i]<s) {
       ss=s;
       s=a[i];
     }
-    else if(a[i] < ss && ss > s)
+    else if(a[i] < ss)
       ss = a[i];
   }
   if(ss == INT_MAX) return -1;
