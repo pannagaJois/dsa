@@ -1,4 +1,5 @@
 #include<iostream>
+#include<climits>
 
 int rev(int n) {
   int r =0;
