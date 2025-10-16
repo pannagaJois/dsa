@@ -15,7 +15,7 @@ int miss1(int a[], int n) {
 }
 
 int miss2(int a[], int n) {
-  int freq[n+1] = {0};
+  std::vector<int> freq = {0};
   for(int i=0; i<n-1; i++)
     freq[a[i]]++;
   for(int i=1; i<=n; i++)
